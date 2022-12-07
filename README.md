@@ -8,7 +8,7 @@ To test if it works, try this code below.
 
 ```js
 const mqtt = require("mqtt");
-const client = mqtt.connect('ws://homeiot-broker.herokuapp.com');
+const client = mqtt.connect('ws://PROJECT_NAME.herokuapp.com');
 
 client.on("connect", () => {
   client.subscribe("presence", (err) => {
